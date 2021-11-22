@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#1E1E1E"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/preCalcView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:enabled="false"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|normal" />
+
+        <EditText
+            android:id="@+id/displayText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#1E1E1E"
+            android:enabled="false"
+            android:hint="0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="29sp"
+            android:textStyle="bold|normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/blacks"
+            android:minWidth="0dp"
+            app:icon="@drawable/ic_rotation"
+            app:iconPadding="0dp"
+            app:iconSize="20dp"
+            app:shapeAppearanceOverlay="@style/Button8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/blacks"
+            android:minWidth="0dp"
+            app:icon="@android:drawable/ic_input_delete"
+            app:iconPadding="0dp"
+            app:iconSize="25dp"
+            app:shapeAppearanceOverlay="@style/Button8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/isPrimeFunctionText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/xSquaredText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/xPowerYText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/clearText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/parenthesesOpenText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/parenthesesCloseText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/divideText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/trigSinText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/trigCosText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/trigTanText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/sevenText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/eightText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/nineText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/multiplyText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/trigArcSinText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/trigArcCosText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/trigArcTanText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/fourText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/fiveText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/sixText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/subtractText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/LogText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/naturalLogText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/squareRootText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/oneText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/twoText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/threeText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/addText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/eText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/piText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/absoluteValueText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:padding="2dp"
+                    android:text="@string/zeroText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/decimalText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+
+                <Button
+                    style="@style/ButtonColor3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_span="1"
+                    android:padding="2dp"
+                    android:text="@string/equalsText"
+                    android:textAllCaps="false"
+                    android:textColor="@color/yellows"
+                    android:textSize="17sp"
+                    android:textStyle="bold|normal"
+                    app:shapeAppearanceOverlay="@style/Button8" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
