@@ -116,7 +116,7 @@ class MainActivity : AppCompatActivity() {
         userExp=userExp.replace(resources.getString(R.string.multiplyText).toRegex(),"*")
         val exp=Expression(userExp)
         val result=exp.calculate().toString()
-        display.setText(result.length)
+        display.setText(result)
     }
 
     fun trigSinBtn(v: View){
