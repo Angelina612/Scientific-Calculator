@@ -36,79 +36,98 @@ class MainActivity : AppCompatActivity() {
         display.setSelection(cursorPs+strToAdd.length)
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun zeroBtn(v: View){
         updateText(resources.getString(R.string.zeroText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun oneBtn(v: View){
         updateText(resources.getString(R.string.oneText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun twoBtn(v: View){
         updateText(resources.getString(R.string.twoText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun threeBtn(v: View){
         updateText(resources.getString(R.string.threeText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun fourBtn(v: View){
         updateText(resources.getString(R.string.fourText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun fiveBtn(v: View){
         updateText(resources.getString(R.string.fiveText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun sixBtn(v: View){
         updateText(resources.getString(R.string.sixText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun sevenBtn(v: View){
         updateText(resources.getString(R.string.sevenText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun eightBtn(v: View){
         updateText(resources.getString(R.string.eightText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun nineBtn(v: View){
         updateText(resources.getString(R.string.nineText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun clearBtn(v: View){
         display.setText("")
         previousCal.text=""
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun parOpenBtn(v: View){
         updateText(resources.getString(R.string.parenthesesOpenText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun parCloseBtn(v: View){
         updateText(resources.getString(R.string.parenthesesCloseText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun divideBtn(v: View){
         updateText(resources.getString(R.string.divideText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun multiplyBtn(v: View){
         updateText(resources.getString(R.string.multiplyText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun addBtn(v: View){
         updateText(resources.getString(R.string.addText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun subtractBtn(v: View){
         updateText(resources.getString(R.string.subtractText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun decimalBtn(v: View){
         updateText(resources.getString(R.string.decimalText))
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun equalBtn(v: View){
         var userExp=display.text.toString()
         previousCal.text=userExp
@@ -119,66 +138,82 @@ class MainActivity : AppCompatActivity() {
         display.setText(result)
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun trigSinBtn(v: View){
         updateText("sin(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun trgCosBtn(v: View){
         updateText("cos(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun trigTanBtn(v: View){
         updateText("tan(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun trigArcSinBtn(v: View){
         updateText("arcsin(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun trigArcCosBtn(v: View){
         updateText("arccos(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun trigArcTanBtn(v: View){
         updateText("arctan(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun logBtn(v: View){
         updateText("log(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun naturalLogBtn(v: View){
         updateText("ln(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun absBtn(v: View){
         updateText("abs(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun piBtn(v: View){
         updateText("pi(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun eBtn(v: View){
         updateText("e(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun sqrtBtn(v: View){
         updateText("sqrt(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun xSquareBtn(v: View){
         updateText("^2")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun xPowerYBtn(v: View){
         updateText("^(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun primeBtn(v: View){
         updateText("isprc(")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun backspaceBtn(v: View){
         val cursorPos=display.selectionStart
         val textLen=display.text.length
@@ -189,6 +224,8 @@ class MainActivity : AppCompatActivity() {
             display.setSelection(cursorPos-1)
         }
     }
+
+    @Suppress("UNUSED_PARAMETER")
     fun rotateBtn(v: View){
 
         requestedOrientation=if(isPortrait){
